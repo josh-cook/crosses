@@ -1,3 +1,12 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+	<h1>Hello, wordl1</h1>,
+	document.getElementById('root')
+);
+
+
 //using graph theory to set solutions
 var solutions = [
 	['A', 'B', 'C'],

@@ -1,0 +1,12 @@
+{
+  "name": "crosses",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:cookiej91/crosses.git",
+  "author": "Josh Cook <jsc91@live.co.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}

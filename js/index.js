@@ -30,6 +30,7 @@ function reset() {
   $('.cross-node').removeClass('colour');
 }
 
+//needs better way of creating a new game
 $('.cross-node').on('click', function(e) {
   answer.push(e.target.id);
   $(e.target).addClass('colour');

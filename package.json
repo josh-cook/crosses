@@ -8,5 +8,11 @@
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
-  }
+  },
+  "devDependencies": {
+    "jest": "^23.2.0"
+  },
+  "scripts": {
+    "test":"jest"
+  },
 }

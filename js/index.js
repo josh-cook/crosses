@@ -1,4 +1,4 @@
-//using graph theory to set solutions
+//Using set theory to set solutions
 var solutions = [
 	['A', 'B', 'C'],
   ['A', 'E', 'I'],
@@ -10,13 +10,13 @@ var solutions = [
   ['G', 'H', 'I'],
 ];
 
-var answer = [];
+var playerAnswer = [];
 
 function isGameOver() {
   var gameOver = false;
 
   solutions.forEach(solution => {
-    var difference = _.difference(solution, answer);
+    var difference = _.difference(solution, playerAnswer);
     if (_.isEmpty(difference)) {
       gameOver = true;
     }
@@ -25,14 +25,15 @@ function isGameOver() {
   return gameOver;
 }
 
+//removing colours from nodes and clearing answer array back to start game state
 function reset() {
-  answer = [];
+  playerAnswer = [];
   $('.cross-node').removeClass('colour');
 }
 
 //needs better way of creating a new game
 $('.cross-node').on('click', function(e) {
-  answer.push(e.target.id);
+  playerAnswer.push(e.target.id);
   $(e.target).addClass('colour');
   if (isGameOver()) {
     alert('You have lost the game');

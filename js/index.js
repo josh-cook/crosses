@@ -11,7 +11,9 @@ $('.cross-node').on('click', function(e) {
   playerAnswer.push(e.target.id);
   $(e.target).addClass('colour');
   if (isGameOver(playerAnswer)) {
-    alert('You have lost the game');
-    reset();
+		setTimeout(() => {
+		  alert('You have lost the game');
+		  reset();
+		}, 0);
   }
 });

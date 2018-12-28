@@ -1,1 +1,2 @@
-Cross and Crosses game (an Alternative to Naughts and Crosses - if you win (3 in a row), you lose)!
+# Cross and Crosses 
+## An alternative to Naughts and Crosses

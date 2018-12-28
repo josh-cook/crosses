@@ -1,4 +1,4 @@
-var playerAnswer = [];
+let playerAnswer = [];
 
 //removing colours from nodes and clearing answer array back to start game state
 function reset() {
@@ -11,9 +11,9 @@ $('.cross-node').on('click', function(e) {
   playerAnswer.push(e.target.id);
   $(e.target).addClass('colour');
   if (isGameOver(playerAnswer)) {
-		setTimeout(() => {
-		  alert('You have lost the game');
-		  reset();
-		}, 0);
+      setTimeout(() => {
+		    alert('You have lost the game');
+		    reset();
+       }, 0);
   }
 });

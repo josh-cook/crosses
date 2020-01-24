@@ -14,8 +14,7 @@ function isGameOver(playerAnswer) {
   let gameOver = false;
 
   solutions.forEach(solution => {
-    gameOver =
-      gameOver || solution.every(letter => playerAnswer.includes(letter));
+    gameOver = gameOver || solution.every(letter => playerAnswer.includes(letter));
   });
 
   return gameOver;
